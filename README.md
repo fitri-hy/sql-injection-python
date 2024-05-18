@@ -1,6 +1,6 @@
 # Basic Auto SQL Injection Python
 
- Proyek python sederhana untuk menguji kerentanan terhadap SQL Injection pada sebuah website. 
+A simple python project to test SQL Injection vulnerabilities on a website.
 
 ```
 git clone https://github.com/fitri-hy/sql-injection-python.git
@@ -9,9 +9,9 @@ pip install selenium
 python main.py
 ```
 
-Gagal membuka Browser:
+Failed to open Browser:
 ```
 firefox_path = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 ```
 
-Sesuaikan dengan path file browser firefox di device kamu.
+Adjust to the Firefox browser file path on your device.
