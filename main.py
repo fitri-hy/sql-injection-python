@@ -24,7 +24,7 @@ def open_browser_and_submit_form(url, data, form_type):
             password_field.submit()
             
             success_message = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.TAG_NAME, 'body'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'dashboard'))
             )
             print("Login successful with payload:", data['username'])
 
@@ -44,7 +44,7 @@ def open_browser_and_submit_form(url, data, form_type):
             password_field.submit()
             
             success_message = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.TAG_NAME, 'body'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'dashboard'))
             )
             print("Successful registration with payload:", data['username'])
 
@@ -56,7 +56,7 @@ def open_browser_and_submit_form(url, data, form_type):
             comment_field.submit()
             
             success_message = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.TAG_NAME, 'body'))
+                EC.presence_of_element_located((By.CLASS_NAME, 'dashboard'))
             )
             print("Comment successfully with payload:", data['comment'])
 
